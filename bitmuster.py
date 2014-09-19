@@ -118,17 +118,18 @@ def binFloat(zahl,stellen):
 
 def main():
     zahl = float(input('Geben Sie eine Zahl ein: '))
+    stellen = int(input('Geben Sie die Stellenzahl ein: '))    
     bit=[]
 	
     if zahl.is_integer():
         if zahl>0.0:
-            bit=binAlgInt1(int(zahl),16)
+            bit=binAlgInt1(int(zahl),stellen)
         else:
-            bit=binAlgSignInt(int(zahl),16)
+            bit=binAlgSignInt(int(zahl),stellen)
     else:
-        bit=binFloat(zahl,16)
+        bit=binFloat(zahl,stellen)
 		
-    print(bit)
+    print(''.join(str(x) for x in bit))
 
     input()
 
