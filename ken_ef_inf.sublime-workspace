@@ -8,21 +8,12 @@
 	"buffers":
 	[
 		{
-			"file": "/C/Users/gregor.luedi/Desktop/web/webserver.py",
+			"file": "/C/Users/gregor.luedi/Documents/nasm_for_noobs/loop.nasm",
 			"settings":
 			{
-				"buffer_size": 215,
+				"buffer_size": 58,
 				"line_ending": "Windows",
-				"name": "import SimpleHTTPServer"
-			}
-		},
-		{
-			"file": "/C/Users/gregor.luedi/Desktop/web/index.html",
-			"settings":
-			{
-				"buffer_size": 55,
-				"line_ending": "Windows",
-				"name": "<html>"
+				"name": "; loop with nasm"
 			}
 		}
 	],
@@ -50,6 +41,10 @@
 	},
 	"file_history":
 	[
+		"/C/Users/gregor.luedi/AppData/Roaming/Sublime Text 2/Packages/User/Plain text.sublime-settings",
+		"/C/Users/gregor.luedi/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/gregor.luedi/Desktop/web/webserver.py",
+		"/C/Users/gregor.luedi/Desktop/web/index.html",
 		"/C/Users/gregor.luedi/AppData/Roaming/Sublime Text 2/Packages/User/HTML.sublime-settings",
 		"/C/Users/gregor.luedi/Documents/ken_ef_inf/portScanner.py"
 	],
@@ -91,51 +86,24 @@
 			[
 				{
 					"buffer": 0,
-					"file": "/C/Users/gregor.luedi/Desktop/web/webserver.py",
+					"file": "/C/Users/gregor.luedi/Documents/nasm_for_noobs/loop.nasm",
 					"settings":
 					{
-						"buffer_size": 215,
+						"buffer_size": 58,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								215,
-								215
+								58,
+								58
 							]
 						],
 						"settings":
 						{
-							"auto_name": "import SimpleHTTPServer",
-							"syntax": "Packages/Python/Python.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/C/Users/gregor.luedi/Desktop/web/index.html",
-					"settings":
-					{
-						"buffer_size": 55,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								55,
-								55
-							]
-						],
-						"settings":
-						{
-							"auto_name": "<html>",
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"auto_name": "; loop with nasm",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
