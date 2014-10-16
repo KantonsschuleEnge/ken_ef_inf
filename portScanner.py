@@ -75,8 +75,11 @@ if __name__=="__main__":
             if ip:
                 print("[+] Running scan on %s"%host)
                 print("[+] Target IP: %s"%ip)
-                for port in ports:
-                    scan(host, int(port))
+                portlist = splitRanges(ports,10)
+                for plist in portlist: 
+                        for port in plist:
+                            thread.start_new_thread(scan,(host, int(port)))
+                            
             else:
                 print("[!] Invalid host")
         except:
