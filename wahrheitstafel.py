@@ -25,4 +25,3 @@ for x in booleanList:
 	# drucken einer tabelle in der form x | y | z-wert
         print('{}\t|\t{}\t|\t{}'.format(x,y,logAusdruck(x,y)))
 
-print(not(booleanList[0]))
