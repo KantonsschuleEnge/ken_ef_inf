@@ -21,5 +21,5 @@ def hex2text(s):
     return text
 
 
-print(text2hex('gregor'))
-print(hex2text(text2hex('gregor')))
+print(text2hex('foo bar'))
+print(hex2text(text2hex('foo bar')))
