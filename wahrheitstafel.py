@@ -13,8 +13,10 @@ booleanList = [True,False] # oder auch [1,0]
 
 # funktion welche einen logischen Ausdruck berechnet
 def logAusdruck(x,y):
-    return (x^y) | (not(x)&y)
+    return (not( x) or y)
 
+def logAusdruck2(x,y):
+    return (not((x or not(y)) and x) or y)
 
 # drucken der ueberschrift der tabelle
 print('x\t|\ty\t|\tz')
