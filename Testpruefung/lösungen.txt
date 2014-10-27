@@ -1,0 +1,77 @@
+Lösungen:
+
+Binärdarstellung
+
+Datei bitmuster.py auf Github KantonsschuleEnge/ken_ef_inf/
+a)
+	bitmuster.py liefert das folgende Bitmuster  10011101
+	in hex: 1001 1101 = 0x9d
+b)
+	10000010011100000 = 0001 0000 0100 1110 0000 = 0x104e0 
+	gibt man 0x104e0 in python3 ein, so gibt der computer 66784 aus. 
+c)
+	mit bitmuster.py -463 = 1111111000110001
+d)
+	float format heisst
+	1 bit vorzeichen		v = 0, positive Zahl
+	8 bit exponent
+	23 bit mantisse
+	bitmuster.py liefert 101011001.01010111000010100011110
+	1.0101100101010111000010100011110
+	0101100101010111000010100011110
+	mantisse = 01011001010101110000101
+	exponent: 9 mit 128 offset -->  exponent = 10001001
+	somit ganz
+	0 | 10001001 | 01011001010101110000101
+
+f)
+	01000100100110100101001000100101
+
+	0 Vorzeichen positive Zahl
+	Exponent: 10001001 – Offset  1001 somit 9
+	Mantisse mit führender 1: 1.00110100101001000100101
+	1001101001.01001000100101 d.h. 617.28350830078125
+
+		bitmuster in hex in Viererblöcke aufgeteilt
+	0100 0100 1001 1010 0101 0010 0010 0101  4 4 9 a 5 2 2 5  in hex 0x449a5225
+g)
+	Datei text2bin.py auf Github KantonsschuleEnge/ken_ef_inf/Tespruefung zusammen mit der Textdatei
+	file = open('testdaten.txt','r')
+	#text = file.read() oder zeilenweise:
+	for line in file:			Dateien werden automatisch zeilenweise gelesen
+		for letter in line:		Texte werden automatisch buchstabenweise gelesen
+			print(format(ord(letter),'#010b'),end=',')
+	file.close()
+
+
+Logische Gatter
+
+a)
+	((x+y')*x*y '+((x+x*y))'
+b)
+	Vereinfachung: ((x+y ')*x*y) '+((x+x*y))'
+	Ausdruck = 0, kann man auch mit einer Wahrheitstafel zeigen.
+c)
+	Wahrheitstafel:
+	x	|	y	|	z
+	--------------------------------------------------
+	True	|	True	|	True
+	True	|	False	|	False
+	False	|	True	|	True
+	False	|	False	|	True 
+d)
+	not: 1 Transistor, nand, nor je zwei Transistoren (siehe Script), and , or je drei Transistoren, somit für den ganzen Schaltkreis: 9 Transistoren, (((x+y ̅ )⋅x)) ̅+y 
+	Vereinfacht man den Schaltkreis, so reichen 4 Transistoren
+	Vereinfachung: x ̅+y
+e)
+	Datei Wahrheitstafel.py auf Github KantonsschuleEnge/ken_ef_inf/Tespruefung
+
+Diverse Aufgaben
+
+a)
+	cat /proc/cpuinfo liefert die Daten. Diese Informationen direkt in eine Datei speichern mit cat /proc/cpuinfo > info.txt 
+b)
+	Mit dem Befehl whereis ndisasm sollte man den Speicherort finden: 
+	/usr/bin/ndisasm /usr/bin/X11/ndisasm /usr/share/man/man1/ndisasm.1.gz
+c)
+	Mit man vi bekommt man die ersten Informationen um das Programm starten zu können. Das Programm hat verschiedene Benutzermodi
