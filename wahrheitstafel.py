@@ -3,9 +3,9 @@
 # author    gregor luedi
 # filename  wahrheitstafel.py
 
-#	logisches und: &
-#	logisches oder:	|
-#	logisches entweder oder ^
+#	logisches und:  and       &			x and y
+#	logisches oder:	or        |			x or y
+#	logisches entweder oder ^    gibt es nur bitweise und nicht als funktion
 #	logisches nicht: not()
 
 # erstellen der Liste mit den beiden Wahrheitswerten
@@ -13,7 +13,7 @@ booleanList = [True,False] # oder auch [1,0]
 
 # funktion welche einen logischen Ausdruck berechnet
 def logAusdruck(x,y):
-    return (x^y) | (not(x)&y)
+    return (x^y) | (not(x) and y)
 
 
 # drucken der ueberschrift der tabelle
@@ -25,4 +25,5 @@ for x in booleanList:
 	# drucken einer tabelle in der form x | y | z-wert
         print('{}\t|\t{}\t|\t{}'.format(x,y,logAusdruck(x,y)))
 
-print(not(booleanList[0]))
+
+input()
