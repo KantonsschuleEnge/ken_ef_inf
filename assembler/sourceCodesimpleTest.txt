@@ -1,0 +1,14 @@
+	0x0804841d <+0>:    push   ebp
+	0x0804841e <+1>:     mov    ebp,esp
+	0x08048420 <+3>:     and    esp,0xfffffff0
+	0x08048423 <+6>:     sub    esp,0x20
+   0x08048426 <+9>:     mov    DWORD PTR [esp+0x1c],0x0
+   0x0804842e <+17>:    cmp    DWORD PTR [esp+0x1c],0x18
+   0x08048433 <+22>:    jne    0x8048443 <main+38>
+   0x08048435 <+24>:    mov    DWORD PTR [esp],0x80484f0
+   0x0804843c <+31>:    call   0x80482f0 <puts@plt>
+   0x08048441 <+36>:    jmp    0x804844f <main+50>
+   0x08048443 <+38>:    mov    DWORD PTR [esp],0x8048508
+   0x0804844a <+45>:    call   0x80482f0 <puts@plt>
+   0x0804844f <+50>:    leave
+   0x08048450 <+51>:    ret
