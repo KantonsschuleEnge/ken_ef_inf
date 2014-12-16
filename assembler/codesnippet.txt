@@ -1,0 +1,10 @@
+End of assembler dump.
+(gdb) x/1bx $esp+0x1c
+0xbffff62c:     0x11
+(gdb) set $esp +0x1c= 0x9a
+Value being assigned to is no longer active.
+(gdb) set {int} 0xbffff62c = 0x9a
+(gdb) c
+Continuing.
+
+
